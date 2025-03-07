@@ -1,11 +1,16 @@
 import React from 'react';
 
-function Home() {
+function HomeMessage(prop){
     return(
         <div>
-            <h1>Welcome to the Home Page.</h1>
+            <h1>{prop.title}</h1>
+            <p>{prop.message}</p>
         </div>
-    )
-} 
+    );
+    /*
+    return "Contact Us";
+    */
+}
 
-export default Home;
+
+export default HomeMessage
