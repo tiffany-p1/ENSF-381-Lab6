@@ -1,6 +1,4 @@
 import React from 'react';
-import Example8 from './Example8';
-import logo from './logo.svg';
 import './App.css';
 import EngineeringTopics from "./EngineeringTopics"
 
