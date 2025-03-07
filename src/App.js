@@ -1,28 +1,31 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-import Home from './Home.js';
-import About from './About.js';
-import Contact from './Contact.js';
+import Contact from "./Contact"
+import About from "./About"
+import Home from "./Home"
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  const titles = ["Home Page", "About Page", "Contact Page"]
+  const description = ["Welcome to our website", "We are passionate about delivering quality experiences", "Feel free to reach out to us via email or phone"]
+  return( 
+  /*
+  <div>
+    
+    <Contact /> 
+    <br></br>
+    <About />
+    <br></br>
+    <Home />
+    <br></br>
+  <div>
+  */
+ <div>
+    <Contact title={titles[2]} message={description[2]} />
+    <About title={titles[1]} message={description[1]} />
+    <Home title={titles[0]} message={description[0]} />
+  </div>
   );
 }
 
-export default App;
+
+export default App; 
